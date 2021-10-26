@@ -36,9 +36,10 @@
 
 .container-navegation{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
 }
 
 .container-navegation > a{
@@ -55,10 +56,27 @@
     transition: color 0.4s;
 }
 
-#noite{
-    width: 33px;
+#aumentar{
     position: absolute;
-    top: 4.8%;
+    top: 3.7%;
+    left: 78%;
+    cursor: pointer;
+    width: 60px;
+}
+
+#diminuir{
+    position: absolute;
+    top: 3.7%;
+    left: 83.3%;
+    cursor: pointer;
+    width: 60px;
+}
+
+
+#noite{
+    width: 35px;
+    position: absolute;
+    top: 5.3%;
     left: 93%;
     cursor: pointer;
 }
@@ -66,17 +84,23 @@
 #dia{
     width: 33px;
     position: absolute;
-    top: 4.8%;
+    top: 5.3%;
     left: 93%;
     cursor: pointer;
     visibility: hidden;
+}
+
+.brasil, .franca, .estadosunidos, .espanha{
+    position: absolute;
+    top: 5.3%;
+    left: 88.25%;
 }
 
 #brasil{
     width: 38px;
     position: absolute;
     top: 4.53%;
-    left: 88%;
+    left: 88.25%;
     cursor: pointer;
     visibility: visible;
 }
@@ -109,7 +133,10 @@
 }
 
 .containerlingua{
-    width: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45px;
     height: 188px;
     position: absolute;
     top: 4.53%;
@@ -121,15 +148,21 @@
 }
 
 #brasil2, #estadosunidos2, #espanha2, #franca2{
-    width: 38px
+    width: 38px;
+    border-radius: 20px;
 }
 
-#estadosunidos2, #espanha2, #frança2{
+#brasil2:hover, #estadosunidos2:hover, #espanha2:hover, #franca2:hover{
+    box-shadow: 0px 0px 10px 0px rgb(252, 134, 14);
+}
+
+#estadosunidos2, #espanha2, #franca2{
     margin-top: 10px;
 }
 
 .container-section{
     width: 100%;
+    height: 100%;
 }
 
 .container-sobrenos{
@@ -139,19 +172,26 @@
     text-align: center;
 }
 .container-texto{
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: rgb(248, 234, 234);
     font-size: 1.1rem;
     text-align: justify;
 
 }
 
+.container-texto > h1{
+    font-size: 3rem;
+}
+
 .container-texto > p{
     display: block;
     width: 50%;
-    margin-top: 10%;
     font-size: 1.7rem;
+    margin-top: 8%
 }
 
 .loop{
@@ -176,7 +216,7 @@
 .container-equipe{
     display: flex;
     width: 100%;
-    height: 791px;
+    margin-bottom: 77px;
 }
 
 .bruna{
@@ -213,3 +253,166 @@
     font-size: 1.1rem;
     
 }
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.classfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c{
+    margin-bottom: 3px;
+}
+
+.ferramentas{
+    margin-top: 10px;
+}
+
+#footerprincipal {
+    background-color: rgb(51 51 51);
+    color: #f8eaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#ulfooter {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #f8eaea;
+}
+
+#copyright {
+    
+    background-color: var(--light-grey);
+    font-size: small;
+    text-align: center;
+}
+
+#copyright p{
+    background-color:rgb(51 51 51);
+    color:#f8eaea
+}
+
+@media screen and (max-width:1092px){
+    
+    .bruna, .mateus, .gabriela, .eduardo, .emilia{
+       
+        flex-direction: column;
+        margin-top: 4rem;
+        
+    }
+
+    .bio{
+        width: 56%;
+        margin:0;
+        margin-top: 5%;
+    }
+
+    #bruna, #mateus, #gabriela, #eduardo, #emilia{
+       
+        width: 260px;
+        
+    }
+
+}
+
+@media (max-width: 1024px) {
+    a {
+        font-size: 20px;
+    }
+
+    .icons p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:908px){
+
+    .bio{
+        width: 69%;
+        font-size: 1rem;;
+    }
+}
+
+@media screen and (max-width:817px){
+
+    .container-texto > p{
+        width: 80%;
+    }
+}
+
+@media (max-width: 773px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    .icons {
+        padding: 0 0 0 0;
+    }
+
+    .icons p {
+        font-size: 16px;
+    }
+
+
+    #footerprincipal a {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .classfooter {
+        padding: 0;
+        width: 200px;
+        padding-bottom: 10px;
+    }
+
+    .classfooter img {
+        width: 16px;
+    }
+
+    #ulfooter {
+        margin: 0;
+        padding: 0;
+    }
+
+    #copyright {
+        height: 20px;
+        font-size: 9px;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    #copyright p {
+        color: rgb(252, 134, 14);
+        margin-top:-30px;
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 572px){
+
+    .bio{
+        width: 81%;
+        font-size: 0.9rem;
+    }
+}
+
