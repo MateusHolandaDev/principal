@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/style.css" defer>
-    <title>Developer Seat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Criative Idea</title>
 </head>
 
 <body>
@@ -17,12 +18,20 @@
 
     <div class="container-aside">
         <div class="items-aside">
+
+            <div class="aumentar3">
+                <img id="aumentar3" src="img/aumentar.png">
+                <img id='diminuir3' src="img/diminuir.png">
+            </div>
+
+
+
             <label id="ferramenta-aside" for=""><span>Ferramentas</span><img id="seta" src="img/seta.png"
                     alt=""></label>
             <div class="ferramentas-links">
-                <label class="aparecer">Calculadora</label>
-                <label class="aparecer" for="">Formulário</label>
-                <label class="aparecer" for="">Cadastro</label>
+                <a href="calculadora.html" class="aparecer">Calculadora</a>
+                <a href="Formulário.html" class="aparecer" for="">Formulário</a>
+                <a href="cadastro.html" class="aparecer" for="">Cadastro</a>
             </div>
         </div>
     </div>
@@ -34,45 +43,47 @@
             <img id="menu-aside2" src="img/menu2.png" alt="">
         </div>
 
-        <div class="container-logo">
-            <img src="img/logolaranja.png" alt="">
+        <div>
+            <a class="container-logo" href="index.html">
+                <img src="img/logolaranja.png" alt="">
+            </a>
         </div>
 
         <div class="container-navegation">
-            <a class="nav-a" id='calculadora' href="#">CALCULADORA</a>
-            <a class="nav-a" id="formulario" href="#">FORMULÁRIO</a>
-            <a class="nav-a" id="cadastro" href="#">CADASTRO</a>
+            <a class="nav-a" id='calculadora' href="calculadora.html">CALCULADORA</a>
+            <a class="nav-a" id="formulario" href="Formulário.html">FORMULÁRIO</a>
+            <a class="nav-a" id="cadastro" href="cadastro.html">CADASTRO</a>
         </div>
-        
-            <div class="aumentar">
-                <img id="aumentar" src="img/aumentar.png">
-                <img id='diminuir' src="img/diminuir.png">
-            </div>
 
-            <div class="noite">
-                <img id="noite" src="img/lua-preenchido-preto.png" alt="">
-            </div>
+        <div class="aumentar">
+            <img id="aumentar" src="img/aumentar.png">
+            <img id='diminuir' src="img/diminuir.png">
+        </div>
 
-            <div class="dia">
-                <img id="dia" src="img/lua-preenchido-branco.png" alt="">
-            </div>
+        <div class="noite">
+            <img id="noite" src="img/lua-preenchido-preto.png" alt="">
+        </div>
 
-            <div class="brasil">
-                <img id="brasil" src="img/brasil.png" alt="">
-            </div>
+        <div class="dia">
+            <img id="dia" src="img/lua-preenchido-branco.png" alt="">
+        </div>
 
-            <div class="estadosunidos">
-                <img id="estadosunidos" src="img/estados-unidos.png" alt="">
-            </div>
+        <div class="brasil">
+            <img id="brasil" src="img/brasil.png" alt="">
+        </div>
 
-            <div class="espanha">
-                <img id="espanha" src="img/espanha.png" alt="">
-            </div>
+        <div class="estadosunidos">
+            <img id="estadosunidos" src="img/estados-unidos.png" alt="">
+        </div>
 
-            <div class="franca">
-                <img id="franca" src="img/franca.png" alt="">
-            </div>
-        
+        <div class="espanha">
+            <img id="espanha" src="img/espanha.png" alt="">
+        </div>
+
+        <div class="franca">
+            <img id="franca" src="img/franca.png" alt="">
+        </div>
+
         <div class="containerlingua">
             <img id="brasil2" src="img/brasil.png" alt="">
             <img id="estadosunidos2" src="img/estados-unidos.png" alt="">
@@ -208,9 +219,10 @@
         <div class="classfooter c">
             <ul id="ulfooter">
                 <h3 id="ferramentas">Ferramentas</h3>
-                <li class="ferramentas"><a id="calculadora-footer" href="#" target="_blank">Calculadora</a><br></li>
-                <li class="ferramentas"><a id="formulario-footer" href="#" target="_blank">Formulario</a></li>
-                <li class="ferramentas"><a id="cadastro-footer" href="#" target="_blank">Cadastro</a>
+                <li class="ferramentas"><a id="calculadora-footer" href="calculadora.html">Calculadora</a><br></li>
+                <li class="ferramentas"><a id="formulario-footer" href="Formulário.html">Formulario</a>
+                </li>
+                <li class="ferramentas"><a id="cadastro-footer" href="cadastro.html">Cadastro</a>
 
             </ul>
         </div>
@@ -225,17 +237,8 @@
     </footer>
     <!--copyrigth com nome da desenvolvedora e ano referente ao projeto-->
     <section id="copyright">
-        <p id="copy">&copy; Made by Bruna Hirano - 2021</p>
+        <p id="copy">&copy;Agência Criative Idea</p>
     </section>
-
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script>
-        $(function () {
-            $(".button-collapse").sideNav();
-        });
-    </script>
 
 </body>
 
