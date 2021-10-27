@@ -4,14 +4,77 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
+}
+
+.desaparecer-aside{
+    position: absolute;
+    width: 76%;
+    height: 100vh;
+    background-color: #9b919195;
+    left: 24%;
+}
+
+.container-aside{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 24%;
+    height: 100vh;
+    background-color:  white;
+   
+}
+
+.items-aside{
+    font-family: 'Poppins', sans-serif;
+    color: #2E2E18;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 129px;
+}
+
+#ferramenta-aside{
+    display:flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #2E2E18;
+    text-decoration: none;
+}
+
+.ferramentas-links{
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+}
+
+#seta{
+    transform: rotateX(180deg)
 }
 
 .container-nav {
-    margin-top: 12px;
-    margin-left: 41px;
-    width: calc(100% - 41px);
     height: 100px;
-    
+}
+
+.menu-aside{
+    margin-left: 20px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#menu-aside{
+    position: absolute;
+    width: 45px;
+}
+
+#menu-aside2{
+    position: absolute;
+    width: 45px;
+    display: none;
 }
 
 .container-logo{
@@ -24,7 +87,7 @@
     position: absolute;
     top: -2%;
     left: 2%;
-    width: 15%;
+    width: 200px;
 }
 
 .container-logo > label{
@@ -58,15 +121,15 @@
 
 #aumentar{
     position: absolute;
-    top: 3.7%;
-    left: 78%;
+    top: 2%;
+    left: 80%;
     cursor: pointer;
     width: 60px;
 }
 
 #diminuir{
     position: absolute;
-    top: 3.7%;
+    top: 2.0%;
     left: 83.3%;
     cursor: pointer;
     width: 60px;
@@ -76,7 +139,7 @@
 #noite{
     width: 35px;
     position: absolute;
-    top: 5.3%;
+    top: 3.3%;
     left: 93%;
     cursor: pointer;
 }
@@ -84,7 +147,7 @@
 #dia{
     width: 33px;
     position: absolute;
-    top: 5.3%;
+    top: 3%;
     left: 93%;
     cursor: pointer;
     visibility: hidden;
@@ -92,14 +155,14 @@
 
 .brasil, .franca, .estadosunidos, .espanha{
     position: absolute;
-    top: 5.3%;
+    top: 3.3%;
     left: 88.25%;
 }
 
 #brasil{
     width: 38px;
     position: absolute;
-    top: 4.53%;
+    top: 3.3%;
     left: 88.25%;
     cursor: pointer;
     visibility: visible;
@@ -333,14 +396,44 @@ footer a {
 }
 
 @media (max-width: 1024px) {
-    a {
-        font-size: 20px;
+
+    .container-aside{
+        width: 46%;
     }
 
     .icons p {
         font-size: 12px;
     }
+
+    .container-logo > img{
+        top: -1.5%;
+        left: 37%;
+    }
+
+    .container-navegation{
+        display:none;
+    }
+
+    .menu-aside{
+        display: flex;
+    }
 }
+
+
+
+
+@media (max-width: 959px) {
+    #aumentar{
+        left: 77%;
+    }
+
+    #diminuir{
+        left: 82.3%;
+    }
+    
+    
+}
+    
 
 @media screen and (max-width:908px){
 
@@ -357,7 +450,20 @@ footer a {
     }
 }
 
-@media (max-width: 773px) {
+@media (max-width: 768px) {
+
+    #brasil, #franca, #estadosunidos, #espanha{
+        width: 32px;
+    }
+    
+    #aumentar, #diminuir{
+        width: 50px;
+    }
+
+    #dia, #noite{
+        width: 30px;
+    }
+
     h3 {
         font-size: 18px;
     }
@@ -407,6 +513,19 @@ footer a {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #brasil, #franca, #estadosunidos, #espanha{
+        display: none;
+    }
+    
+    #aumentar, #diminuir{
+        display: none;
+    }
+
+    #dia, #noite{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 572px){
 
@@ -416,3 +535,29 @@ footer a {
     }
 }
 
+@media screen and (max-width: 281) {
+    .container-logo > img{
+        width: 150px;
+        margin-top: 15px;
+    }
+}
+
+@keyframes animacao{
+    from{
+        background-color: white
+    }
+
+    to{
+        background-color: #2E2E18;
+    }
+}
+
+@keyframes animacao2{
+    from{
+        background-color: #2E2E18;  
+    }
+
+    to{
+        background-color: white
+    }
+}
