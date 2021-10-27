@@ -30,6 +30,12 @@ main{
     margin-bottom: 20px;
 }
 
+.bloco-texto-inputs-form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .inputs-e-operação {
     display:flex;
     justify-content:center;
@@ -195,7 +201,6 @@ main{
 .h1-box-top {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
     color: #fd692f;
     margin-top: 50px;
 }
@@ -203,7 +208,6 @@ main{
 .h2-box-top {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     color: #fd692f;
     margin-top: 10px;
 }
@@ -211,7 +215,6 @@ main{
 .p-box-top {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
     color: #333333;
     margin-top: 20px;
 }
@@ -266,6 +269,12 @@ main{
     }
 }
 
+@media (max-width: 640px){
+    #form2{
+        width: 70%;
+    }
+}
+
 @media (max-width: 580px) {
     #form1 {
         width: 70%;
@@ -273,27 +282,11 @@ main{
         
     }
     #form2 {
-        width: 50%;
+        width: 70%;
         height: 100vh;
     }
 }
 
-@media (max-width: 475px) {
-    #form1 {
-        width: 80%;
-        height: 75vh; 
-        
-    }
-    #form2 {
-        width: 75%;
-        height: 100vh;
-    }
-    .buttons input[type="button"] {
-        width: 150px;
-        height: 30px;
-        font-size: 20px;
-    }
-}
 
 @media (max-width: 380px) {
     #form1 {

@@ -29,7 +29,6 @@ body {
 
 header {
     background-image: linear-gradient(to right, var(--laranja-escuro) , var(--laranja-claro)); 
-    height: 50px;
     text-align: center;
     color: white;
 }
@@ -125,6 +124,10 @@ table td img {
 
 tr{
     border-top: 1px solid #E0DEDE;
+}
+
+td{
+    text-align: center;
 }
 
 .center {
